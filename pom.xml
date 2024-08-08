@@ -38,9 +38,30 @@
             <version>3.26.3</version>
             <scope>test</scope>
         </dependency>
-
-
-
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-jar-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.4.2</version>
+                <configuration>
+                    <classesDirectory>${basedir}/target/classes</classesDirectory>
+                    <outputDirectory>${basedir}/target</outputDirectory>
+                    <testClassesDirectory>${basedir}/target/test-classes</testClassesDirectory>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                            <mainClass>com.smartbear.chait.Main</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
 
 </project>
