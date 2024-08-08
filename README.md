@@ -61,7 +61,7 @@ you should be able to see `british-spoken-time-1.0-SNAPSHOT.jar`.
 - Move into the location where the jar file got built(probably the `target` folder).
 - Once the jar file is located, we can issue the below command to start the main class in the jar
   ```bash
-  java -jar ./british-spoken-tume-1.0-SNAPSHOT.jar com.smartbear.chait.Main
+  java -jar ./british-spoken-time-1.0-SNAPSHOT.jar com.smartbear.chait.Main
   ```
 - The jar will continuously accept time and will keep outputting the British spoken time for the inputs.
 - To exit from the jar, use unix style quit `:q!` as input. 
