@@ -54,7 +54,7 @@ successfully, then Java is already installed. You can skip this section.
   mvn clean install
   ```
 - After the command executes, you should be able to see a target folder in the root directory and under the target folder
-you should be able to see `british-spoken-tume-1.0-SNAPSHOT.jar`.
+you should be able to see `british-spoken-time-1.0-SNAPSHOT.jar`.
 
 ### Running the jar
 
