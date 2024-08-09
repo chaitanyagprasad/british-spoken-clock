@@ -1,10 +1,6 @@
 package com.smartbear.chait;
 
 import com.smartbear.chait.command.*;
-import com.smartbear.chait.constant.*;
-import com.smartbear.chait.convertor.*;
-import com.smartbear.chait.factory.*;
-import com.smartbear.chait.formatter.*;
 import com.smartbear.chait.handlers.*;
 import com.smartbear.chait.validator.*;
 
@@ -27,24 +23,6 @@ public class Main {
             }
         }
     }
-
-//    public static String convert(String time) {
-//        // base cases
-//        if (time.equals("12:00")) return TimeWordConstants.NOON;
-//        if (time.equals("00:00") || time.equals("0:00")) return TimeWordConstants.MIDNIGHT;
-//
-//        String[] splitNumbers = time.split(":");
-//        Integer hour = Integer.valueOf(splitNumbers[0]);
-//        Integer minutes = Integer.valueOf(splitNumbers[1]);
-//
-//        BaseTimeConvertor hourConvertor = ConvertorFactory.hourConvertor(hour, minutes);
-//        BaseTimeConvertor minutesConvertor = ConvertorFactory.minutesConvertor(minutes);
-//
-//        String hourAsSpokenWord = hourConvertor.convert(hour);
-//        String minutesAsSpokenWord = minutesConvertor.convert(minutes);
-//
-//        return TimeFormatter.format(hourAsSpokenWord, minutesAsSpokenWord, minutes);
-//    }
 
     public static String convert(String time) {
         String[] splitNumbers = time.split(":");
